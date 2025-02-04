@@ -8,10 +8,12 @@
           <p>包含贪心、A*、Dijkstra、BFS等算法的可视化演示</p>
         </div>
       </router-link>
-      <div class="algo-card coming-soon">
-        <h2>排序算法</h2>
-        <p>即将推出：各种排序算法的可视化演示</p>
-      </div>
+      <router-link to="/sorting" class="algo-link">
+        <div class="algo-card">
+          <h2>排序算法</h2>
+          <p>包含冒泡、快速、归并、堆排序等算法的可视化演示</p>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -54,23 +56,6 @@
 
 .algo-card:hover {
   transform: translateY(-5px);
-}
-
-.coming-soon {
-  opacity: 0.7;
-  position: relative;
-}
-
-.coming-soon::after {
-  content: "即将推出";
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #ff4757;
-  color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
 }
 
 h1 {
